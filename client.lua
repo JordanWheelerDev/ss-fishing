@@ -2,7 +2,8 @@ local QBCore = exports['qb-core']:GetCoreObject()
 local fishingBait = nil
 
 -- Show the UI for selecting bait
-RegisterNetEvent('ss-fishing:openBaitUI', function()
+RegisterNetEvent('ss-fishing:openBaitUI')
+AddEventHandler('ss-fishing:openBaitUI', function()
     SetNuiFocus(true, true)
     SendNUIMessage({
         action = 'openBaitUI'
@@ -24,7 +25,8 @@ RegisterNUICallback('selectBait', function(data, cb)
 end)
 
 -- Fishing logic
-RegisterNetEvent('ss-fishing:startFishing', function(coords)
+RegisterNetEvent('ss-fishing:startFishing')
+AddEventHandler('ss-fishing:startFishing', function(coords)
     if not fishingBait then
         QBCore.Functions.Notify("Select your bait first!", "error")
         return
