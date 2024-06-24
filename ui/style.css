@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#bait-ui {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#bait-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.bait-item {
+  background-color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: move;
+}
+
+#bait-target {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  border-radius: 10px;
+}
